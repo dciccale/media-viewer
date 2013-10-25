@@ -1,0 +1,110 @@
+#app {
+  font-size: 130%;
+}
+
+.header {
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  top: -1px;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #000;
+  background-image: -webkit-linear-gradient(#3c3c3c, #111);
+  background-image: linear-gradient(#3C3C3C, #111);
+  -webkit-transform: translateZ(0);
+}
+
+.header .pure-button {
+  position: absolute;
+  top: 3px;
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.3);
+  box-shadow: 0 1px 0 rgba(255,255,255,.3);
+  background-image: -webkit-linear-gradient(#444,#2d2d2d);
+  border: 1px solid #111;
+  color: #fff;
+  padding: .35em 1.25em;
+  border-radius: 8px;
+}
+
+.header .btn-left {
+  left: 10px;
+}
+
+.header .btn-close {
+  position: absolute;
+  top: 4px;
+  right: 0px;
+  color: rgba(255, 255, 255, .7);
+  display: inline-block;
+  font-size: 120%;
+  padding: .3em .6em;
+}
+
+.header .pure-button-disabled {
+  display: none;
+}
+
+.header h1 {
+  text-align: center;
+  min-height: 1.1em;
+  font-size: 1em;
+  color: #fff;
+}
+
+#content {
+  padding-top: 2.5em;
+}
+
+#list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#list li {
+  display: block;
+  margin: 4px 0;
+  text-align: left;
+  padding: .5em .75em;
+}
+
+#list i {
+  margin-right: 10px;
+}
+
+#browser {
+  position: relative;
+  margin: 1em 0;
+}
+
+#spinner-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .5);
+  top: 0;
+  left: 0;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms linear;
+}
+
+#spinner-overlay.overlay-active {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+#spinner {
+  display: none;
+  font-size: 400%;
+  opacity: .7;
+  position: relative;
+  top: 40%;
+}
+
+#spinner.icon-spin {
+  display: block;
+}

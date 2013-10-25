@@ -1,0 +1,40 @@
+<!doctype html>
+  <title>Media Viewer</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="css/pure-base-min.css" rel="stylesheet">
+  <link href="css/pure-buttons-min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+
+  <div id="app">
+
+    <!-- header -->
+    <div id="header" class="header">
+      <button id="back" class="pure-button pure-button-disabled btn-left">
+        <i class="icon-chevron-left"></i>
+      </button>
+      <h1>Media Viewer</h1>
+      <a id="close" class="btn-close">
+        <i class="icon-remove-sign"></i>
+      </a>
+    </div>
+
+    <!-- content -->
+    <div id="content">
+
+      <!-- spinner -->
+      <div id="spinner-overlay" class="overlay-active">
+        <i id="spinner" class="icon-spinner icon-spin"></i>
+      </div>
+
+      <!-- directory list -->
+      <ul id="list"></ul>
+    </div>
+  </div>
+
+  <script src="local:///chrome/webworks.js"></script>
+  <script src="js/lib/kimbo.min.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('webworksready', window.app.init);
+  </script>

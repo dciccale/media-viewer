@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets" version="1.0.0" id="MediaViewer">
+  <name>Media Viewer</name>
+  <author>Denis Ciccale</author>
+  <description>Browse and access all your phone media, pictures, videos, etc, from the Device and your SDCard.</description>
+  <content src="index.html" />
+  <icon src="img/icon.png"/>
+  <feature id="blackberry.invoke" />
+  <feature id="blackberry.invoke.card" />
+  <feature id="blackberry.io" />
+  <feature id="blackberry.app" />
+  <rim:permissions>
+    <rim:permit>access_shared</rim:permit>
+  </rim:permissions>
+</widget>
